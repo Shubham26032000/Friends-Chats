@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".Activities.ChatActivity">
+
+  <androidx.appcompat.widget.Toolbar
+      android:id="@+id/toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/greenDark"
+      android:minHeight="?attr/actionBarSize"
+      android:theme="?attr/actionBarTheme"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:titleMargin="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="3dp">
+
+      <ImageView
+          android:id="@+id/ivBackArrow"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:srcCompat="@drawable/ic_back_arrow" />
+
+      <de.hdodenhof.circleimageview.CircleImageView
+          android:id="@+id/ivProfileImage"
+          android:layout_width="50dp"
+          android:layout_height="50dp"
+          android:layout_marginStart="12dp"
+          android:foregroundGravity="center"
+          android:padding="5dp"
+          android:src="@drawable/avatar"
+          app:civ_border_color="#FF000000"
+          app:civ_border_width="1dp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintStart_toEndOf="@+id/ivBackArrow"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.511" />
+
+      <TextView
+          android:id="@+id/tvUserName"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="3dp"
+          android:gravity="center"
+          android:text="Shubham Vast"
+          android:textColor="#FFFFFF"
+          android:textSize="18sp"
+          android:textStyle="bold"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintStart_toEndOf="@+id/ivProfileImage"
+          app:layout_constraintTop_toTopOf="@+id/ivProfileImage"
+          app:layout_constraintVertical_bias="0.0" />
+
+      <TextView
+          android:id="@+id/tvStatus"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:paddingLeft="3dp"
+          android:paddingTop="3dp"
+          android:paddingRight="3dp"
+          android:paddingBottom="3dp"
+          android:text="Offline"
+          android:textColor="#FFFFFF"
+          app:layout_constraintStart_toStartOf="@+id/tvUserName"
+          app:layout_constraintTop_toBottomOf="@+id/tvUserName" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+  </androidx.appcompat.widget.Toolbar>
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/chatsRecyclerView"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:layout_marginBottom="2dp"
+      app:layout_constraintBottom_toTopOf="@+id/cardView"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+  <androidx.cardview.widget.CardView
+      android:id="@+id/cardView"
+      android:layout_width="0dp"
+      android:layout_height="50dp"
+      android:layout_marginEnd="8dp"
+      android:layout_marginBottom="8dp"
+      app:cardCornerRadius="30dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      android:layout_marginRight="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+      <ImageView
+          android:id="@+id/btnAddMedia"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:layout_marginLeft="4dp"
+          app:srcCompat="@drawable/add_media" />
+
+      <EditText
+          android:id="@+id/etMessageBox"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="2dp"
+          android:layout_weight="1"
+          android:background="@android:color/transparent"
+          android:hint="Type a message..."
+          android:inputType="textPersonName"
+          android:padding="8dp"
+          android:textSize="14sp" />
+
+      <ImageView
+          android:id="@+id/ivSendBtn"
+          android:layout_width="100dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          app:srcCompat="@drawable/ic_baseline_send_24" />
+
+
+    </LinearLayout>
+  </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="10dp"
+    android:orientation="vertical"
+    android:paddingTop="8dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="8dp">
+
+    <TextView
+        android:id="@+id/tvDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?selectableItemBackground"
+        android:fontFamily="sans-serif-thin"
+        android:gravity="right"
+        android:padding="10dp"
+        android:text="Delete for Me"
+        android:textColor="@color/greenDark"
+        android:textSize="16sp"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:id="@+id/tvCancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?selectableItemBackground"
+        android:fontFamily="sans-serif-thin"
+        android:gravity="right"
+        android:padding="10dp"
+        android:text="Cancel"
+        android:textColor="@color/greenDark"
+        android:textSize="16sp"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:id="@+id/tvDeleteEveryone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?selectableItemBackground"
+        android:fontFamily="sans-serif-thin"
+        android:gravity="right"
+        android:padding="10dp"
+        android:text="Delete for Everyone"
+        android:textColor="@color/greenDark"
+        android:textSize="16sp"
+        android:textStyle="normal|bold" />
+
+</LinearLayout>
