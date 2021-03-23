@@ -8,16 +8,20 @@
         android:roundIcon="@drawable/friend_chat_icon"
         android:supportsRtl="true"
         android:theme="@style/Theme.FriendsChats">
-        <activity android:name=".Activities.ViewImageActivity"></activity>
-        <activity android:name=".Activities.SIgnInActivity" />
-        <activity android:name=".Activities.SetUpProfileActivity" />
-        <activity android:name=".Activities.SignUpActivity">
+        <activity android:name=".Activities.SplashScreenActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:launchMode="singleTop">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".Activities.ViewImageActivity" />
+        <activity android:name=".Activities.SIgnInActivity" />
+        <activity android:name=".Activities.SetUpProfileActivity" />
+        <activity android:name=".Activities.SignUpActivity"/>
         <activity android:name=".Activities.ChatActivity" />
         <activity
             android:name=".Activities.MainActivity"
