@@ -38,7 +38,7 @@ public class ChatsFragment extends Fragment {
     User user;
 
     FragmentChatsBinding binding;
-    public ChatsFragment() {
+    public ChatsFragment() { 
         // Required empty public constructor
     }
 

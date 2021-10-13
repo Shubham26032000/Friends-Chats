@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/ADMIN/FriendsChats/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/ADMIN/FriendsChats/app/src/main/res/layout/activity_set_up_profile.xml" value="0.22" />
+        <entry key="..\:/Users/ADMIN/FriendsChats/app/src/main/res/layout/activity_sign_up.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/ADMIN/FriendsChats/app/src/main/res/layout/activity_splash_screen.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/ADMIN/FriendsChats/app/src/main/res/layout/activity_view_image.xml" value="0.19074074074074074" />
+        <entry key="..\:/Users/ADMIN/FriendsChats/app/src/main/res/layout/delete_dialog_layout.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/ADMIN/FriendsChats/app/src/main/res/layout/fragment_chats.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/ADMIN/FriendsChats/app/src/main/res/layout/fragment_users.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/ADMIN/FriendsChats/app/src/main/res/layout/receive_message.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/ADMIN/FriendsChats/app/src/main/res/layout/send_message.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/ADMIN/FriendsChats/app/src/main/res/layout/user_element_layout.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/ADMIN/FriendsChats/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.19074074074074074" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

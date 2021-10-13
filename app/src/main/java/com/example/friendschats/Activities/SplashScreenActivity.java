@@ -19,11 +19,11 @@ public class SplashScreenActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
 
-        FirebaseAuth auth = FirebaseAuth.getInstance();
+
 
         Intent intent;
-
-        if (auth != null)
+        FirebaseAuth auth = FirebaseAuth.getInstance();
+        if (auth == null)
         {
             intent = new Intent(SplashScreenActivity.this, MainActivity.class);
         }else{

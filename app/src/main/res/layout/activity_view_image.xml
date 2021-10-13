@@ -42,6 +42,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="70dp"
             android:foregroundGravity="center"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
             android:src="@drawable/profile_fragment_icon" />
     </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

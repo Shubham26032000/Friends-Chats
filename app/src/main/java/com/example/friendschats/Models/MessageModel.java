@@ -5,7 +5,6 @@ public class MessageModel {
     private String message;
     private String senderId;
     private long timeStamp;
-    private int feeling = -1;
     private String type ;
 
     public MessageModel() {
@@ -61,11 +60,4 @@ public class MessageModel {
         this.timeStamp = timeStamp;
     }
 
-    public int getFeeling() {
-        return feeling;
-    }
-
-    public void setFeeling(int feeling) {
-        this.feeling = feeling;
-    }
 }

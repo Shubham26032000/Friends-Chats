@@ -1,15 +1,14 @@
 package com.example.friendschats.Activities;
 
+import android.os.Bundle;
+import android.view.View;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.friendschats.Constant.Constants;
 import com.example.friendschats.R;
 import com.example.friendschats.databinding.ActivityViewImageBinding;
 import com.squareup.picasso.Picasso;
-
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
 
 /**
  * In this activity we show selected image.

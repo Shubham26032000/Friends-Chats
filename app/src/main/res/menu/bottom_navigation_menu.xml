@@ -3,14 +3,14 @@
 
     <item
         android:id="@+id/menu_chats"
-        android:title="Chats"
-        android:icon="@drawable/chat_fragment"
+        android:title="All users"
+        android:icon="@drawable/users_fragment_icon"
         />
 
     <item
         android:id="@+id/menu_users"
-        android:title="All users"
-        android:icon="@drawable/users_fragment_icon"/>
+        android:title="Chats"
+        android:icon="@drawable/chat_fragment"/>
 
     <item
         android:id="@+id/menu_profile"
